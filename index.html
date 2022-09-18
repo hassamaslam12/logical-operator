@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical operator</title>
+</head>
+<body><form onsubmit="doCheck(); return false">
+    <h1>Shoes size calculator</h1><br>
+    <h3>please enter your size in cm </h3><br>
+    <input type="number" id="sizeInCm" placeholder="size in cm" min="20" max="31" step="0.5"><br>
+    <h3>please enter your size in uk size</h3><br>
+    <input type="number" id="sizeInUk" placeholder="ukSize" min="1" max="12.5" step="0.5"><br>
+    <button>Check</button>
+    <h2 id="result"></h2>
+    <hr>
+    
+</form>
+
+    <script>
+ function doCheck(){
+
+    let sizeInCm = +document.querySelector("#sizeInCm").value
+    let sizeInUk = +document.querySelector("#sizeInUk").value
+     if (sizeInCm === 20 || sizeInUk === 1){
+            let result = `your size in EU is 34`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===20.5 || sizeInUk === 2){
+            let result = `your size in EU is 34.5`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===21 || sizeInUk===2.5){
+            let result = `your size in EU is 35`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===21.5 || sizeInUk===3){
+            let result = `your size in EU is 35.5`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===22 || sizeInUk===3.5){
+            let result = `your size in EU is 36`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===22.5 || sizeInUk===4){
+            let result = `your size in EU is 36.5`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===23 || sizeInUk===4.5){
+            let result = `your size in EU is 37`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===23.5 || sizeInUk===5){
+            let result = `your size in EU is 37.5`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+    else if (sizeInCm===24 || sizeInUk===5.5){
+            let result = `your size in EU is 38`
+            result = document.querySelector("#result").innerHTML=result;
+     }
+     else
+     {
+        let result = `We dont have this size in this shoes`
+        result = document.querySelector("#result").innerHTML=result;
+     }
+    
+    
+}
+    </script>
+</body>
+</html>
